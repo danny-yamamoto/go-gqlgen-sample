@@ -27,7 +27,9 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"golang.Go",
-				"bierner.markdown-mermaid"
+				"bierner.markdown-mermaid",
+				"GraphQL.vscode-graphql",
+				"apollographql.vscode-apollo"
 			]
 		}
 	},
