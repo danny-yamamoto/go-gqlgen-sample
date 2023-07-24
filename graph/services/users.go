@@ -2,7 +2,6 @@ package services
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/danny-personal/go-gqlgen-sample/graph/db"
 	"github.com/danny-personal/go-gqlgen-sample/graph/model"
@@ -23,7 +22,6 @@ func (u *userService) GetUserByName(ctx context.Context, name string) (*model.Us
 	).One(ctx, u.exec) // limit 1
 	// 2. エラー処理
 	if err != nil {
-		fmt.Println("koko")
 		return nil, err
 	}
 	// 3. 戻り値の*model.User型を作る
