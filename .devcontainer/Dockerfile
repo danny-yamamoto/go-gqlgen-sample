@@ -29,6 +29,7 @@ RUN go install google.golang.org/protobuf/...@v1.28.1
 RUN go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.3.0
 RUN go install github.com/volatiletech/sqlboiler/v4@latest
 RUN go install github.com/volatiletech/sqlboiler/v4/drivers/sqlboiler-sqlite3@latest
+RUN go install github.com/99designs/gqlgen@latest
 
 # [Optional] Uncomment the next lines to use go get to install anything else you need
 # USER vscode
